@@ -1,0 +1,203 @@
+#backgroundset
+{
+    background-image: url(https://images6.alphacoders.com/410/410309.jpg);
+}
+#welcome
+{
+    height: 150px;
+    width: 200px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    border-radius: 10px;
+    outline-offset: 10px; 
+}
+#welcome:hover
+{
+    transform: rotate(357deg);
+    box-shadow: 0 0 500px blueviolet;
+    /* height: 200px;
+    width: 250px; */
+}
+#head
+{
+   
+    margin-top: 200px;
+    
+}
+
+#heading
+{
+    text-align: center;
+    color: rgb(94, 239, 94);
+    font-size: 45px;
+    font-family: serif;
+    font-weight:900;
+}
+#heading:hover
+{
+    color: wheat;
+    text-shadow: 9 9 30 22 red;
+    
+}
+#button1
+{
+	width: auto;
+	height: 40px;
+	background:darkred;
+	
+	border-radius: 7px;
+	font-weight: bolder;
+	font-size: 20px;
+	box-shadow: 0 0 70px #f2f2f2;
+	border: none;
+	outline: none;
+	color: white;
+}
+#click
+{
+    text-align: center;
+    color: white;
+}
+
+
+/* Mobile password css*/
+
+#mobile
+{
+    height: 600px;
+    width: 350px;
+    border: 7px solid black;
+    border-radius: 17px;
+    border-bottom: 35px solid black;
+    border-top: 30px solid black;
+   
+}
+
+#camera
+{
+    height: 23px;
+}
+
+
+.font1
+{
+  margin-top: 47px;
+  font-size: 20px;
+  color: white;
+}
+.pin-code
+{
+  color: white;
+  margin-top:10px;
+}
+.pin-contains
+{
+  color: white;
+}
+input
+{
+  border:none;
+  padding: 7px;
+  border-radius: 5px;
+  width:200px;
+  outline: none;
+
+}
+
+
+.button-area
+{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+button
+{
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  border-style: none;
+  font-size: 17px;
+  margin: 12px;
+
+}
+button:hover
+{
+  color:#f2f2f2;
+  cursor: pointer;
+  background-color: black;
+}
+
+
+/*end Mobile password css*/
+
+/* Mobile chating css*/
+
+.dropdown-menu
+{
+  float: left;
+}
+
+.chat-page
+{
+	margin-top: -12px;
+  
+}
+.msg-inbox
+{
+	width: 500px;
+	overflow: hidden;
+	padding-bottom: 5px;
+}
+.chats
+{
+	padding: 15px 0px 0 0px;
+}
+.msg-page
+{
+	height: 385px;
+	width: 312px;
+	overflow-y: auto;
+}
+
+
+
+/* .chat-page
+{
+	padding:0 0 50px;
+	margin-top: -12px;
+}
+.msg-inbox
+{
+	border: 0px solid #ccc;
+	width: 500px;
+	background-color: #f5f7fa;
+
+	overflow: hidden;
+	padding-bottom: 5px;
+}
+.chats
+{
+	padding: 20px 15px 0 25px;
+}
+.msg-page
+{
+	height: 400px;
+	width: 600px;
+	overflow-y:auto ;
+} */
+
+/*end Mobile chating css*/
+
+.instruction
+{
+  color:whitesmoke;
+  text-align: center;
+  padding-top: 30px;
+  font-weight: 900;
+  font-size: 40px;
+  
+  
+}

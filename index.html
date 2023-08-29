@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome User</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body id="backgroundset">
+    <div id="welcomepage">
+        <div class=" container" id="welcome">
+            <button class=" btn btn-group-lg btn-dark" id="button1">Welcome</button>
+        </div>
+        <p id="click">Click here</p>
+        <div id="head">
+            <h2 id="heading"></h2>
+        </div>
+    </div>
+    <div class=" container-fluid" id="showpassmobile" style="display: none; ">
+        <div class="row">
+            <div class=" col-md-6">
+                <!--Mobile desk password 1-->
+                <center>
+                    <div class="container mt-5" id="mobile1">
+                        <div id="mobile" style=" background-color:black">
+                            <div style="margin-top: -27px;">
+                                <img src="https://media.istockphoto.com/id/598716642/photo/camera-lens.jpg?b=1&s=170667a&w=0&k=20&c=KQid2LFylzPSKgEXa9wzDSTIsNRGVTzcJdY8ykszFDI="
+                                    alt="" id="camera">
+                            </div>
+                            <section style="display: none;" id="displayon1">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <i class="fa-solid fa-signal mx-1 text-light"></i>
+                                    </div>
+                                    <div class="col-1">
+                                        <b class="text-light" style=" font-size: 13px;">JIO4G</b>
+                                    </div>
+                                    <div class="col-2">
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fa-solid fa-message text-light"></i>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fa-brands fa-whatsapp text-success"></i>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fa-brands fa-facebook text-primary"></i>
+                                    </div>
+                                    <div class="col-2">
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fa-brands fa-bluetooth" style="color:darkblue"></i>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fa-solid fa-battery-three-quarters text-light" style="font-size: 22px;"></i>
+                                    </div>
+                                    <div class="col-1">
+                                    </div>
+                                </div>
+                                <div class=" text-center" style="height:465px;">
+                                    <div class="font1"><i class="fa fa-lock" aria-hidden="true"></i></div>
+                                    <h3 class="pin-code" id="password">Enter Password</h3>
+                                    <h5 class="pin-contains">Your Password Contains at least 7 digits</h5>
+                                    <input type="password" name="" id="usr1textBox" onload="usr1Check();">
+                                    <div class="button-area">
+                                        <button id="btn1"
+                                            onclick="document.getElementById('usr1textBox').value+=document.getElementById('btn1').innerHTML">1</button>
+                                        <button id="btn2"
+                                            onclick="document.getElementById('usr1textBox').value+=document.getElementById('btn2').innerHTML">2</button>
+                                        <button id="btn3"
+                                            onclick="document.getElementById('usr1textBox').value+=document.getElementById('btn3').innerHTML">3</button><br>
+                                        <button id="btn4"
+                                            onclick="document.getElementById('usr1textBox').value+=document.getElementById('btn4').innerHTML">4</button>
+                                        <button id="btn5"
+                                            onclick="document.getElementById('usr1textBox').value+=document.getElementById('btn5').innerHTML">5</button>
+                                        <button id="btn6"
+                                            onclick="document.getElementById('usr1textBox').value+=document.getElementById('btn6').innerHTML">6</button><br>
+                                        <button id="btn7"
+                                            onclick="document.getElementById('usr1textBox').value+=document.getElementById('btn7').innerHTML">7</button>
+                                        <button id="btn8"
+                                            onclick="document.getElementById('usr1textBox').value+=document.getElementById('btn8').innerHTML">8</button>
+                                        <button id="btn9"
+                                            onclick="document.getElementById('usr1textBox').value+=document.getElementById('btn9').innerHTML">9</button><br>
+                                        <a href="#" id="loginBtn"><button><i class="fa fa-check"
+                                                    aria-hidden="true"></i></button></a>
+                                        <button id="btn0"
+                                            onclick="document.getElementById('usr1textBox').value+=document.getElementById('btn0').innerHTML">0</button>
+                                            <a href="#" id="remove1"><button><i class="fa fa-times" aria-hidden="true"></i></button></a>
+                                    </div>
+                                </div>
+                            </section>
+                            <div style="margin-top: 539px; margin-left:20px;" id="displaybutton">
+                                <a href="#" id="display">
+                                    <img src="https://static.vecteezy.com/system/resources/thumbnails/010/977/246/small/dark-blue-neon-button-glowing-neon-button-png.png"
+                                        alt="" style="height:30px;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </center>
+                <!--End Mobile desk password 1-->
+                <!--Mobile chatbox 1-->
+                <center>
+                    <div class="container mt-5" style="display:none ;" id="usr1ChatBox">
+                        <div id="mobile" style=" background-image:url(https://w0.peakpx.com/wallpaper/1002/370/HD-wallpaper-whatsapp-love-heart-shaped-stone-creative-stone-thumbnail.jpg);">
+                            <div style="margin-top: -27px;">
+                                <img src="https://media.istockphoto.com/id/598716642/photo/camera-lens.jpg?b=1&s=170667a&w=0&k=20&c=KQid2LFylzPSKgEXa9wzDSTIsNRGVTzcJdY8ykszFDI="
+                                    alt="" id="camera">
+                            </div>
+                            <section id="">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <i class="fa-solid fa-signal mx-1 text-light"></i>
+                                    </div>
+                                    <div class="col-1">
+                                        <b class=" text-light" style=" font-size: 13px;">JIO4G</b>
+                                    </div>
+                                    <div class="col-2">
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fa-solid fa-message  text-light"></i>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fa-brands fa-whatsapp text-success"></i>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fa-brands fa-facebook text-primary"></i>
+                                    </div>
+                                    <div class="col-2">
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fa-brands fa-bluetooth" style="color:darkblue"></i>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fa-solid fa-battery-three-quarters  text-light" style="font-size: 22px;"></i>
+                                    </div>
+                                    <div class="col-1">
+                                    </div>
+                                </div>
+                                <div class=" text-center" style="height:465px; width: 313px;"><br>
+                                    <div class="row"
+                                        style="background-color: #f2f2f2;padding: 0px; height: 55px; border-radius:2px;">
+                                        <div class="col-1 mt-3">
+                                            <i class="fa-solid fa-arrow-left" id="back1" style="cursor: pointer;"></i>
+                                        </div>
+                                        <div class="col-1 mt-2">
+                                            <img src="rohit.jpg" alt="" style=" height:35px;border-radius:50px;">
+                                        </div>
+                                        <div class="col-5 mt-1">
+                                            <ul style="list-style: none;margin-left:-15px;">
+                                                <li>
+                                                    <p style="margin-left: -22px;margin-top:4px;font-weight:600;">Rohit
+                                                        Raj</p>
+                                                </li>
+                                                <li>
+                                                    <p style="margin-top: -19px;margin-left:-35px;" id="typmsg2">Online
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-2">
+                                        </div>
+                                        <div class="col-1 mt-3">
+                                            <i class="fa-solid fa-phone"></i>
+                                        </div>
+                                        <div class="col-1 mt-3">
+                                            <i class="fa-solid fa-video"></i>
+                                        </div>
+                                        <div class="col-1 mt-3">
+                                            <div class="dropdown dropstart">
+                                                <i class="fa-solid fa-ellipsis-vertical " data-bs-toggle="dropdown"
+                                                    aria-expanded="false" style="cursor: pointer;"></i>
+                                                <ul class=" dropdown-menu mt-4">
+                                                    <li><a class="dropdown-item" href="#">Rohit Raj</a></li>
+                                                    <li><a class="dropdown-item" href="#" id="delete">Clear chat</a>
+                                                    <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="chat-page">
+                                        <div class="msg-inbox">
+                                            <div class="chats">
+                                                <div class="msg-page">
+                                                    <div id="usr1TextArea">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">
+                                                <i class="fa-solid fa-face-smile text-danger"
+                                                    style="cursor: pointer; font-size:17px;"></i>
+                                            </span>
+                                            <input type="text" class="form-control" id="msg1TextBox"
+                                                placeholder="write message...">
+                                            <span class="input-group-text">
+                                                <a href="#" >
+                                                    <i class="fa-brands fa-telegram text-info"
+                                                        style="font-size: 22px; " id="msgusr1send"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div style="margin-top: 50px; margin-left:15px;" id="">
+                                <a href="#" id="">
+                                    <img src="https://static.vecteezy.com/system/resources/thumbnails/010/977/246/small/dark-blue-neon-button-glowing-neon-button-png.png"
+                                        alt="" style="height:30px;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </center>
+                <!--End Mobile chatbox 1-->
+            </div>
+            <div class="col-md-6">
+                <!--Mobile desk password 2-->
+                <center>
+                    <div class="container mt-5" id="mobile2">
+                        <div id="mobile" style=" background-color:black">
+                            <div style="margin-top: -27px;">
+                                <img src="https://media.istockphoto.com/id/598716642/photo/camera-lens.jpg?b=1&s=170667a&w=0&k=20&c=KQid2LFylzPSKgEXa9wzDSTIsNRGVTzcJdY8ykszFDI="
+                                    alt="" id="camera">
+                            </div>
+                            <section style="display: none;" id="displayon2">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <i class="fa-solid fa-signal mx-1 text-light"></i>
+                                    </div>
+                                    <div class="col-1">
+                                        <b class="text-light" style=" font-size: 13px;">JIO4G</b>
+                                    </div>
+                                    <div class="col-2">
+
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fa-solid fa-message text-light"></i>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fa-brands fa-whatsapp text-success"></i>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fa-brands fa-facebook text-primary"></i>
+                                    </div>
+                                    <div class="col-2">
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fa-brands fa-bluetooth" style="color:darkblue"></i>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fa-solid fa-battery-three-quarters text-light" style="font-size: 22px;"></i>
+                                    </div>
+                                    <div class="col-1">
+                                    </div>
+                                </div>
+                                <div class=" text-center" style="height:465px;">
+                                    <div class="font1"><i class="fa fa-lock" aria-hidden="true"></i></div>
+                                    <h3 class="pin-code" id="password2">Enter Password</h3>
+                                    <h5 class="pin-contains">Your Password Contains at least 7 digits</h5>
+                                    <input type="password" name="" id="usr2textBox" onload="usr2Check();">
+                                    <div class="button-area">
+                                        <button id="btn1"
+                                            onclick="document.getElementById('usr2textBox').value+=document.getElementById('btn1').innerHTML">1</button>
+                                        <button id="btn2"
+                                            onclick="document.getElementById('usr2textBox').value+=document.getElementById('btn2').innerHTML">2</button>
+                                        <button id="btn3"
+                                            onclick="document.getElementById('usr2textBox').value+=document.getElementById('btn3').innerHTML">3</button><br>
+                                        <button id="btn4"
+                                            onclick="document.getElementById('usr2textBox').value+=document.getElementById('btn4').innerHTML">4</button>
+                                        <button id="btn5"
+                                            onclick="document.getElementById('usr2textBox').value+=document.getElementById('btn5').innerHTML">5</button>
+                                        <button id="btn6"
+                                            onclick="document.getElementById('usr2textBox').value+=document.getElementById('btn6').innerHTML">6</button><br>
+                                        <button id="btn7"
+                                            onclick="document.getElementById('usr2textBox').value+=document.getElementById('btn7').innerHTML">7</button>
+                                        <button id="btn8"
+                                            onclick="document.getElementById('usr2textBox').value+=document.getElementById('btn8').innerHTML">8</button>
+                                        <button id="btn9"
+                                            onclick="document.getElementById('usr2textBox').value+=document.getElementById('btn9').innerHTML">9</button><br>
+                                        <a href="#" id="loginBtn2"><button><i class="fa fa-check"
+                                                    aria-hidden="true"></i></button></a>
+                                        <button id="btn0"
+                                            onclick="document.getElementById('usr2textBox').value+=document.getElementById('btn0').innerHTML">0</button>
+                                            <a href="#" id="remove2"><button><i class="fa fa-times" aria-hidden="true"></i></button></a>
+                                    </div>
+                                </div>
+                            </section>
+                            <div style="margin-top: 539px; margin-left:20px;" id="displaybutton2">
+                                <a href="#" id="display2">
+                                    <img src="https://static.vecteezy.com/system/resources/thumbnails/010/977/246/small/dark-blue-neon-button-glowing-neon-button-png.png"
+                                        alt="" style="height:30px;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </center>
+                <!--End Mobile desk password 2-->
+                <!--Mobile chatbox 2-->
+                <center>
+                    <div class="container mt-5" style="display:none ;" id="usr2ChatBox">
+                        <div id="mobile" style=" background-image:url(https://e1.pxfuel.com/desktop-wallpaper/145/718/desktop-wallpaper-mobile-rock-hearts-thumbnail.jpg)">
+                            <div style="margin-top: -27px;">
+                                <img src="https://media.istockphoto.com/id/598716642/photo/camera-lens.jpg?b=1&s=170667a&w=0&k=20&c=KQid2LFylzPSKgEXa9wzDSTIsNRGVTzcJdY8ykszFDI="
+                                    alt="" id="camera">
+                            </div>
+                            <section id="">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <i class="fa-solid fa-signal mx-1 "></i>
+                                    </div>
+                                    <div class="col-1">
+                                        <b class="" style=" font-size: 13px;">JIO4G</b>
+                                    </div>
+                                    <div class="col-2">
+
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fa-solid fa-message "></i>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fa-brands fa-whatsapp text-success"></i>
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fa-brands fa-facebook text-primary"></i>
+                                    </div>
+                                    <div class="col-2">
+
+                                    </div>
+                                    <div class="col-1">
+                                        <i class="fa-brands fa-bluetooth" style="color:darkblue"></i>
+                                    </div>
+
+                                    <div class="col-1">
+                                        <i class="fa-solid fa-battery-three-quarters " style="font-size: 22px;"></i>
+
+                                    </div>
+                                    <div class="col-1">
+
+                                    </div>
+
+                                </div>
+                                <div class=" text-center" style="height:465px; width: 313px;"><br>
+                                    <div class="row"
+                                        style="background-color: #f2f2f2;padding: 0px; height: 55px; border-radius:2px;">
+                                        <div class="col-1 mt-3">
+                                            <i class="fa-solid fa-arrow-left"></i>
+                                        </div>
+                                        <div class="col-1 mt-2">
+                                            <img src="rrr.jpg" alt="" style=" height:35px;border-radius:50px;">
+                                        </div>
+                                        <div class="col-5 mt-1">
+                                            <ul style="list-style: none;margin-left:-15px;">
+                                                <li>
+                                                    <p style="margin-left: -22px;margin-top:4px;font-weight:600;">Mohit
+                                                        Raj</p>
+                                                </li>
+                                                <li>
+                                                    <p style="margin-top: -19px;margin-left:-35px;" id="typmsg1">Online</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-2">
+
+                                        </div>
+
+                                        <div class="col-1 mt-3">
+                                            <i class="fa-solid fa-phone"></i>
+                                        </div>
+                                        <div class="col-1 mt-3">
+                                            <i class="fa-solid fa-video"></i>
+                                        </div>
+                                        <div class="col-1 mt-3">
+
+                                            <div class="dropdown dropstart">
+
+                                                <i class="fa-solid fa-ellipsis-vertical " data-bs-toggle="dropdown"
+                                                    aria-expanded="false" style="cursor: pointer;"></i>
+                                                <ul class=" dropdown-menu mt-4">
+                                                    <li><a class="dropdown-item" href="#">Mohit Raj</a></li>
+                                                    <li><a class="dropdown-item" href="#" id="delete2">Clear Chat</a></li>
+                                                    <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                 <div class="chat-page">
+                                        <div class="msg-inbox">
+                                            <div class="chats">
+                                                <div class="msg-page">
+                                                    <div id="usr2TextArea">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">
+                                                <i class="fa-solid fa-face-smile text-danger"
+                                                    style="cursor: pointer; font-size:17px;"></i>
+                                            </span>
+                                            <input type="text" class="form-control" id="msg2TextBox"
+                                                placeholder="write message...">
+                                            <span class="input-group-text">
+                                                <a href="#" >
+                                                    <i class="fa-brands fa-telegram text-info"
+                                                        style="font-size: 22px; " id="msgusr2send"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div style="margin-top: 50px; margin-left:15px;" id="">
+                                <a href="#" id="">
+                                    <img src="https://static.vecteezy.com/system/resources/thumbnails/010/977/246/small/dark-blue-neon-button-glowing-neon-button-png.png"
+                                        alt="" style="height:30px;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </center>
+                <!--End Mobile chatbox 2-->
+            </div>
+        </div>
+        <p class="instruction">Click On Blue Button to Switch On Mobile</p>
+    </div>
+    <script src="js/welcome.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/remove.js"></script>
+    <script src="js/sending.js"></script>
+    <script src="js/back.js"></script>
+</body>
+</html>
